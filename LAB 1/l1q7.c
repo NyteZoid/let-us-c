@@ -10,4 +10,3 @@ int main()
     printf("%d fahrenheit is equal to %d celsius \n", fahrenheit, celsius);
     return 0;
 }
-// end main
