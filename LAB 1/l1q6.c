@@ -11,4 +11,3 @@ int main()
     printf("Area is %d and Volume is %d\n", area, volume);
     return 0;
 }
-// end main
