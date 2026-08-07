@@ -10,4 +10,3 @@ int main()
 	op4 = (a + b) * (c / d);
 	printf("The answers are %d, %d, %d, %d", op1, op2, op3, op4);
 }
-// end 
