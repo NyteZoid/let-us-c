@@ -16,4 +16,3 @@ int main() {
 	printf("Compound Interest is: %f", CI);
 	return 0;
 }
-// end 
