@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-	int students[100], n, roll, pos, flag = 0, low, high, mid;
+	int students[100], n, roll, pos, flag = 0;
 	printf("Enter number of elements: ");
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++) {
@@ -13,23 +13,14 @@ int main() {
 	
 	printf("Enter roll number to be searched: ");
 	scanf("%d", &roll);
-	low = 0;
-	high = n - 1;
 	
-	do {
-		mid = (low + high) / 2;
-		if (roll < students[mid]) {
-			high = mid - 1;
-		}
-		else if (roll > students[mid]) {
-			low = mid + 1;
-		}
-		else {
-			pos = mid;
+	for (int i = 0; i < n; i++) {
+		if (students[i] == roll) {
+			pos = i;
 			flag = 1;
 			break;
 		}
-	} while (roll != students[mid] && low <= high);
+	}
 	
 	if (flag == 1) {
 		printf("Roll number %d found at position %d", roll, pos + 1);
